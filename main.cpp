@@ -1,24 +1,18 @@
-#include <iostream>
-#include <cmath>
-
-using namespace std;
+#include "Common.h"
+#include "Initialize.h"
+#include "Shuffle.h"
+#include "Split.h"
+#include "Draw.h"
 
 int main()
 {
-	int Num1 = 10;
-	float Num2 = 1.0f;
+	Initialize();
 
-	cout << Num1 + 3 << endl;
-	cout << Num1 - 3 << endl;
-	cout << Num1 * 3 << endl;
-	cout << Num1 / 3 << endl;
-	cout << Num1 % 3 << endl;
+	Shuffle();
 
-	cout << Num2 + 3.0f << endl;
-	cout << Num2 - 3.0f << endl;
-	cout << Num2 * 3.0f << endl;
-	cout << Num2 / 3.0f << endl;
-	cout << std::fmod(Num2, 3.0f) << endl;
+	Split();
+
+	Draw();
 
 	return 0;
 }
